@@ -1,12 +1,17 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
-import { HomePage } from '../odontologos/pages/HomePage'
 import { ContactPage } from '../auth/pages/ContactPage'
-import { DetailsPage } from '../odontologos/pages/DetailsPage'
-import { FavsPage } from '../odontologos/pages/FavsPage'
+import { HomePage, DetailsPage, FavsPage } from '../odontologos'
+import { Footer, Navbar } from '../ui'
+
+
+Navbar
 
 export const AppRouter = () => {
   return (
     <>
+
+        <Navbar/>
+
         <Routes>
 
             <Route path='/' element={ <Navigate to='/home' /> } />
@@ -17,6 +22,8 @@ export const AppRouter = () => {
             <Route path='details' element={ <DetailsPage/> } />
         
         </Routes>
+
+        <Footer/>
     </>
   )
 }
