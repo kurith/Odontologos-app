@@ -1,9 +1,11 @@
-
+import { AppRouter } from "./router/AppRouter"
 
 export const OdontoApp = () => {
   return (
     <>
-        <h1>Odontologos</h1>
+
+        <AppRouter/>
+        
     </>
   )
 }
