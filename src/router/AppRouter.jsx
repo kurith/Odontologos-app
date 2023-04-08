@@ -4,12 +4,12 @@ import { HomePage, DetailsPage, FavsPage } from '../odontologos'
 import { Footer, Navbar } from '../ui'
 
 
-Navbar
-
 export const AppRouter = () => {
+
+
   return (
     <>
-
+ 
         <Navbar/>
 
         <Routes>
@@ -23,7 +23,7 @@ export const AppRouter = () => {
         
         </Routes>
 
-        <Footer/>
+        {/* <Footer/> */}
     </>
   )
 }

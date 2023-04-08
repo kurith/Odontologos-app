@@ -1,6 +1,12 @@
+import { OdontologosList } from "../components/OdontologosList"
 
 export const DetailsPage = () => {
   return (
-    <div>Details</div>
+    <>
+      <h1>Odontologo</h1>
+      <hr />
+
+      <OdontologosList id={2}/>
+    </>
   )
 }
