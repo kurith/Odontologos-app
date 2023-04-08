@@ -10,7 +10,7 @@ export const Navbar = () => {
                 className=" navbar-brand" 
                 to="/"
             >
-                <img src="" alt="" />
+                <img src="/images/DH.ico" alt="dh" />
                 Odontologos
             </Link>
 
