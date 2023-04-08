@@ -1,6 +1,19 @@
 import { Link } from "react-router-dom"
+import { useFav } from "../hooks/useFav"
 
 export const OdontologoCard = ( { id, name, username } ) => {
+
+    const { handleNewFav } = useFav()
+
+    const onNewFav = (e) => {
+        e.preventDefault()
+        const newFav = {
+            id: id,
+            name: name,
+            username: username,
+        }
+        handleNewFav( newFav )
+    }
 
   return (
     <div className="col">
@@ -24,7 +37,15 @@ export const OdontologoCard = ( { id, name, username } ) => {
 
                     </div>
 
+                    <button 
+                    className="btn btn-primary "
+                    onClick={ onNewFav }
+                    >
+                    Fav
+                    </button>
+
                 </div>
+
 
 
             </div>
