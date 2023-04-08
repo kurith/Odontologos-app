@@ -1,3 +1,48 @@
+// import { useEffect, useState } from "react"
+
+// const url = `https://jsonplaceholder.typicode.com/users/`
+
+// export const odontologos = () => {
+//     const [state, setState] = useState({
+//         data: [],
+//         isLoading: true,
+//         hasError: null,
+//     })
+
+//     const getFetch = async () => {
+
+//         setState({
+//             ...state,
+//             isLoading: true,
+//         })
+
+//         const resp = await fetch( url );
+//         const data = await resp.json();
+
+//         setState({
+//             data,
+//             isLoading: false,
+//             hasError: null,
+//         })
+
+//     }
+
+//     useEffect(() => {
+//         getFetch()
+//     }, [url])
+
+//     const odontologos = state.data.map( o => ({
+//         id: o.id,
+//         name: o.name,
+//         username: o.username,
+//         email: o.email,
+//         company: o.company.name,
+//         phone: o.phone,
+//         website: o.website
+//       }))
+
+//     return odontologos;
+// }
 
 export const odontologos = [
     {

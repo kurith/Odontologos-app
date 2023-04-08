@@ -1,20 +1,17 @@
 import { Navigate, useNavigate, useParams } from "react-router-dom"
-import { OdontologosList } from "../components/OdontologosList"
 import { getOdontologosById } from "../helpers/getOdontologosById"
+
 
 export const DetailsPage = () => {
 
   const { id } = useParams()
   const navigate = useNavigate();
-  const odontologo = getOdontologosById( parseInt(id) )
+  const odontologo = getOdontologosById( parseInt(id) ) 
+
+  console.log( odontologo )
 
   const onNavigateBack = () => {
     navigate(-1)
-  }
-
-
-  if( !odontologo ){
-    return <Navigate to="/home"/>
   }
 
   return (
@@ -51,7 +48,6 @@ export const DetailsPage = () => {
         </div>
 
        
-
     </div>
   )
 }

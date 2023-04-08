@@ -6,7 +6,6 @@ import { Footer, Navbar } from '../ui'
 
 export const AppRouter = () => {
 
-
   return (
     <>
  
