@@ -20,7 +20,7 @@ export const OdontologoCard = ( { id, name, username } ) => {
                         <h5 className="card-title">{ name }</h5>
                         <p className="card-text">{ username }</p>
 
-                        <Link to={`/details`}>
+                        <Link to={`/details/${ id }`}>
                             Details...
                         </Link>
 
